@@ -12,6 +12,11 @@ function App() {
     setCards(mappedEmojis);
   }, []);
 
+  const shuffle = () => {
+    const shuffledCards = cards.sort(() => Math.random() - 0.5);
+    setCards([...shuffledCards]);
+  };
+
   return (
     <>
       <div className="container mx-auto flex flex-col items-center md:max-w-[800px] w-fit">
@@ -21,6 +26,13 @@ function App() {
             <Card content={emoji} key={id} />
           ))}
         </div>
+        <div className="my-5"></div>
+        <button
+          className="bg-blue-600 text-white px-3 py-1 rounded-md"
+          onClick={shuffle}
+        >
+          Shuffle
+        </button>
       </div>
     </>
   );
