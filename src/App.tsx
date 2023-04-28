@@ -28,7 +28,7 @@ function App() {
         </div>
         <div className="my-5"></div>
         <button
-          className="bg-blue-600 text-white px-3 py-1 rounded-md"
+          className="bg-blue-600 text-white text-lg px-3 py-1 rounded-md"
           onClick={shuffle}
         >
           Shuffle
