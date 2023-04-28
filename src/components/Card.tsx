@@ -1,7 +1,7 @@
 const Card: React.FC<{ content: string }> = ({ content }) => {
   return (
-    <div className="border-red-400 border-2 bg-white rounded-md p-1">
-      <span className="text-2xl">{content}</span>
+    <div className="border-red-500 border-2 bg-white rounded-md aspect-[3/4] w-32 flex flex-col items-center justify-center">
+      <div className="text-5xl mx-auto w-fit">{content}</div>
     </div>
   );
 };
